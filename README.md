@@ -9,7 +9,7 @@ https://youtu.be/O-O_uvx_jfw
 
 **●初めに**  
 　PCで車のゲームをプレイするとき、ゲームパッドではハンドル操作感が乏しいので運転が難しく、かといって机にFFBハンドルコントローラーを据え付けると使わないときに邪魔です。そこで気が向いた時だけ手軽に接続できるようにハンドヘルド型FFBハンドルコントローラーを作ってみました。  
-![外観](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/b21325b0-b142-43ff-97c2-ad52d6c9545f)
+![外観](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/63f6caab-d3bb-4456-a868-326bf15af7f2)
 
 
 **●主な部品**  
@@ -24,17 +24,21 @@ https://youtu.be/O-O_uvx_jfw
 ⑨分割ロングピンソケット: 秋月購入価格 80円  
 ⑩ジョイスティック: Amazon購入価格 799円/5個 単価160円  
 その他は手持ちから流用ですが全部購入してもトータルで2,000円弱かと思います。(3Dプリンタのフィラメント代が別途必要です。)  
-![パーツ](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/8e65b599-72a6-4051-a39b-93ceebcbd8d8)
+![パーツ](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/86be3352-4e99-4de4-81db-a0ebfa543808)
+
 
 
 **●ハードウェア**  
-![回路図2](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/e4aa05fb-901c-4162-903e-d2a317030d3c)
+![回路図2](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/7ae64294-45f1-4c68-b067-b7ecd0ff0fa1)
 
-![メインボード](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/8d800b7f-7854-4d62-a7c9-ebafec2cdefe)
+
+![メインボード](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/5231a688-009f-42b3-93ba-2ab4186190f5)
+
 
 ・マイコンボードとしてArduino Pro Microを使います。PC用ゲームコントローラとして使うためにはArduino NANOやArduino Pro Miniではダメなので注意が必要です。今回AliexpressからUSB Type-Cコネクタの物を調達しました。  
 ・Arduinoは他に転用するかもしれないので秋月の分割ロングピンソケットを介して万能基板に取り付けて、ずれないように4隅をホットボンドで固定しています。またUSBコネクタ部分もホットボンドで補強しています。  
-![メインボード2](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/4cf38459-97a8-4b94-9863-ce1336df0b64)
+![メインボード2](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/6a898933-bbb4-4940-89e8-db2107af40a8)
+
 
 ・USB給電だけで動かしたかったので、反力用のモーターとしては小電流で低回転のタミヤのソーラーモーター02を使います。このモーター、ネットで調べたのですが詳細スペックがわからず、おそらくAmazonで売られているRF-500TB-18280という型番の物ではないかと思います。タミヤで出している物は価格が少し高いのですがM2.5(?)の取り付けネジとピニオンギアが同梱されているのがメリットです。  
 ・モータードライバは秋月で購入したBD6211F-E2を同じく秋月のピッチ変更基板を使って組んでいます。  
@@ -45,7 +49,8 @@ https://youtu.be/O-O_uvx_jfw
 ・モーターのシャフトには10歯のピニオンギアを使います。  
 ・モーターとボリュームは振動するのでネジロック剤を併用して取り付けています。  
 ・モーター、ボリューム、スイッチは万能基板とXHコネクタで接続しています。何度か抜き差ししているうちにコネクタの付け根が断線してしまったのでホットボンドで補強しています。  
-![内部](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/5f97a35c-a717-45de-94c4-4faa5b3e8476)
+![内部](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/42c9838a-d1a7-43d4-8ef5-30850382eb8a)
+
 
 
 **●ソフトウェア**  
@@ -72,7 +77,8 @@ https://youtu.be/O-O_uvx_jfw
 
 **●筐体について**  
 ・実はこのケースは3作目で、ステアの回転軸を30°手前に傾けています。前作は回転軸が横向きでした。昔ネジコンというコントローラーがあったのと、ラジコン用のプロポを意識したのですが、ボリュームの回転角300°を回すには横向きでは人体の構造上無理があることがわかりました。30°傾いていると肘の関節の回転を使えるので持ち替えずに回しきることができます。私はどちらも触ったことがないのですが、おそらくネジコンやプロポの回転範囲は狭いのだと思います。  
-![平面図](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/ad87f8dc-6f37-476f-848f-84580644bd27)
+![平面図](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/5e7b1c35-fd7a-4799-a871-7da1d2a4bf9b)
+
 
 
 **●3Dデータ＆組付けについて**  
@@ -80,7 +86,8 @@ https://youtu.be/O-O_uvx_jfw
 ・スペーサーというモデルはさらに小型のボリュームを使う際に、シャフトが短い分を埋めるために使います。  
 ・ジョイスティックは、シャフトを±30°くらい傾けられるのですが、リニアな変化が得られるのは±22°くらいです。±30°倒せるようにするとリニアな領域が狭くてほとんどスイッチ的な使い方になってしまうので、ケースの上蓋の溝で±24°に制限をかけています。  
 ・ジョイスティックのノブは、スカート部分を切り取って使います。
-![ジョイスティックノブ](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/586f98c1-d982-4455-9cae-9192a5cea2bc)
+![ジョイスティックノブ](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/581d033a-f549-42dd-8869-932e57216218)
+
 
 ・スライサーはUltimaker-Curaを使っています。フィラメントはメインギア以外は汎用/PLAでStandard Quality - 0.2mmでインフィル密度20%、印刷は0.4mmノズルです。  
 ・サポートを外しやすいように、サポートオーバーハング角度は70°、サポート密度は5.0%としました。  
@@ -91,9 +98,11 @@ https://youtu.be/O-O_uvx_jfw
 ・手持ちのPETGフィラメントの線径が細いのだと思いますが、PLAと同じデータだとスカスカになってしまったので若干サイズを調整しています。  
 ・TPUギアって耐久的にどうかなと思ったので、ソフトで耐久試験ができるようにしました。  
 ・ギアの印刷で、1周に1か所スタート点ができるのですが、その部分の歯のサイズが少し大きくなり、ピニオンギアとのかみ合わせに滑らかさが欠けます。ボリュームの回転角が300°なので、ギアのスタート点にマーキングをして、その歯を避けて組み付ける必要があります。  
-![ギア印刷](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/29b94be5-82b0-497d-8c9b-8f546a84dee2)
+![ギア印刷](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/c72e5f15-d06b-4da8-a91d-51f3a04e5927)
 
-![ギアマーキング](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/e72585fd-1393-43a4-82c8-46b4fe8710b2)
+
+![ギアマーキング](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/380f8ccc-00d2-444d-aaef-2218fa559cb8)
+
 
 ・印刷前にレベリングをちゃんと調整しておかないといといけません。ノズルとベッドとの隙間が狭すぎるとケースのあわせ面のリブの溝の幅が狭まってしまって組めなくなるので注意です。  
 
