@@ -54,8 +54,7 @@ https://youtu.be/O-O_uvx_jfw
   https://github.com/vsulako/AFFBWheel  
   AFFBWheelフォルダから、  
   以下のファイル以外のファイルをMyAFFBWheelフォルダにコピーします。  
-    AFFBWheel.ino, bb_i2c.cpp, bb_i2c.h, motor.cpp, motor.h,  
-    multiturn.cpp, multiturn.h,   
+    AFFBWheel.ino, bb_i2c.cpp, bb_i2c.h, motor.cpp, motor.h, multiturn.cpp, multiturn.h   
 ・Arduino IDE 1.8.19以上でボードタイプはArduino Leonardoを選択してビルドします。  
 ・ビルドするとコントロールパネルのデバイスとプリンターにArduino Leonardoというゲームデバイスが出現します。  
 ・オリジナルのAFFBWheelではステア入力デバイスは光学エンコーダーを使うようになっていますが、ArduinoのA/Dに置き換えています。またオリジナルはEEPに調整用の値を書き込んで(設定用の汎用アプリがあるようです)細かい調整ができるようですが、今回は端折っています。  
