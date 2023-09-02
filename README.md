@@ -12,7 +12,7 @@ https://youtu.be/O-O_uvx_jfw
 ![外観](https://github.com/Toshi2020/Handheld-FFB-wheel/assets/81674805/b21325b0-b142-43ff-97c2-ad52d6c9545f)
 
 
-**●主な部品**
+**●主な部品**  
 ①DCモーター: タミヤ ソーラーモーター02 Amazon購入価格 721円  
 ②Arduino Pro Micro: AliExpress購入価格 568円  
 ③モータードライバー: BD6211F-E2 秋月購入価格 110円  
