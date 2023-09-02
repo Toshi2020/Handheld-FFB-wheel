@@ -1,10 +1,10 @@
-#Handheld-FFB-wheel
-#ハンドヘルド型FFB(フォースフィードバック)ハンドルコントローラー
+#Handheld-FFB-wheel  
+#ハンドヘルド型FFB(フォースフィードバック)ハンドルコントローラー  
 
 ●ここには詳細を置きます。概要はこちら↓に記述しました。  
 https://minkara.carview.co.jp/userid/3336538/blog/47191094/
 
-動作の状況の動画はこちら。 
+動作の状況の動画はこちら。  
 https://youtu.be/O-O_uvx_jfw 
 
 ●初めに  
